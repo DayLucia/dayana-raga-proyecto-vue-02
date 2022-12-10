@@ -94,7 +94,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-row class="text-left align-center space-around"
+    <v-row class="text-left align-center space-around"
       bg="green"> 
       <v-col cols="6">
         <v-row>
@@ -115,8 +115,7 @@
           </v-col>
           <v-col cols="12" class="space-evenly">
             <v-btn
-            color="green
-            primary">Play Store</v-btn>
+            color="green primary">Play Store</v-btn>
             <v-btn
             color="#ffffff"
             normal>Apple store</v-btn>
@@ -131,6 +130,11 @@
         />
       </v-col>       
     </v-row>
+    <v-row>
+
+        
+    </v-row>
+
     </v-row>
   </v-container>
 </template>
@@ -149,6 +153,8 @@
       asideTitle: 'Conoce nuestra App',
       asideSub: 'Y prepara tu propio menu semanal',
       asideText: '¡Asi es! Encuentra las recetas que más se adapten a ti segun tu alimentación diaria',
+
+      alert: false,
 
   })}
 </script>
