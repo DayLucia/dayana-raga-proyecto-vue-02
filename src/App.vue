@@ -2,6 +2,7 @@
   <v-app>
     <v-app-bar
       app
+      interved-scroll
       color="green"
       dark
     >
