@@ -37,18 +37,21 @@
 
     <v-main>
       <HelloWorld/>
+      <FormVue/>
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld';
+import FormVue from './components/FormVue';
 
 export default {
   name: 'App',
 
   components: {
     HelloWorld,
+    FormVue,
   },
 
   data: () => ({
