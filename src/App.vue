@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link>
     </nav>
     <router-view/>
-  </div>
+      </div>
 </template>
 
 <style lang="scss">
@@ -14,7 +14,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #3b3b3b;
 }
 
 nav {
@@ -22,7 +22,7 @@ nav {
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #AFCC0F;
 
     &.router-link-exact-active {
       color: #42b983;
