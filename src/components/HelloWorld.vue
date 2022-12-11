@@ -4,12 +4,12 @@
       <v-col cols="6">
         <v-row>
           <v-col cols="12">
-            <h1>
+            <h1 class="tituloMain fontTitulos">
               {{mainTitle}}
             </h1>
           </v-col>
           <v-col>
-            <p>
+            <p class="textoMain">
               {{mainSubT}}
             </p>
           </v-col>
