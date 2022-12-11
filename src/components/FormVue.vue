@@ -155,7 +155,7 @@ export default {
           this.ingredientesExtraidos.push(arrayIngredientes[i]);
         } //Fin del for
         
-        let arrayPreparacion = this.preparacion.split("\\n");
+        let arrayPreparacion = this.preparacion.split("\n");
         //For para separar la preparacion en un array
         for (var item = 0; item < arrayPreparacion.length; item++) {
           this.preparacionExtraida.push(arrayPreparacion[item]);
