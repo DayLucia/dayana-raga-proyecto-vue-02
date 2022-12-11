@@ -22,6 +22,12 @@ font-weight: 400;
     width: 100%;
     margin: auto;
 }
+.flex-c{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+}
 .tituloChico{
     font-family: 'Titan One', cursive;
     font-size: 1.5em;
@@ -37,7 +43,7 @@ font-weight: 400;
 .A{
     color: #F2B705;
 }
-.V{
+.V, .verde{
     color: #AFCC0F !important;
 }
 .tituloSection3, .tituloAside2{
@@ -58,4 +64,17 @@ margin-bottom: .7em !important;
 }
 .cont3{
     margin-top: 2em;
+}
+.texto-card{
+    text-align: left;
+}
+.titulo-card{
+    font-weight: 800;
+    font-size: 1.5em !important;
+    margin-left: .5rem;
+    color: #F2B705;
+}
+.btns-card{
+    color: #dfdcdc;
+    justify-content: space-between;
 }
