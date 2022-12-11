@@ -19,7 +19,7 @@
             </div>
         </v-row>
         <v-row class="flex-c">
-            <div v-for="(receta, index) in recetas">
+            <div v-for="(receta, index) in recetas" v-bind:key="index"> 
             <v-col cols="12">
                     <v-card
                     elevation="6"
@@ -80,7 +80,7 @@
                             </template>
                         </v-dialog>
                     </v-col>
-                            <v-btn icon @click.prevent="btnDelete(index, recetas)"><v-icon color="#8c0303">mdi-delete</v-icon></v-btn> 
+                            <v-btn icon @click="btnDelete(index, recetas)"><v-icon color="#8c0303">mdi-delete</v-icon></v-btn> 
                         </v-card-actions>
                     </v-card>
                 </v-col>
@@ -132,7 +132,7 @@
         }
       },
       //BOTON BORRAR
-      btnDelete: function(locacion, array) {
+      btnDelete: function (locacion, array) {
         array.splice(locacion, 1);
         this.saveRecetas()
       },

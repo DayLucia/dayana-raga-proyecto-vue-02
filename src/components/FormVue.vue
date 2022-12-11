@@ -160,18 +160,18 @@ export default {
         for (var item = 0; item < arrayPreparacion.length; item++) {
           this.preparacionExtraida.push(arrayPreparacion[item]);
         } //Fin del for
-        
-        let contador2 = this.contador++;
+        this.contador++;
+        let contador2 = this.contador;
         //Añadimos la receta
-        this.armarReceta(this.autor, this.nReceta, this.tiempo, this.tipo, this.ingredientesExtraidos, this.preparacionExtraida, this.contador)
+        this.armarReceta(this.autor, this.nReceta, this.tiempo, this.tipo, this.ingredientesExtraidos, this.preparacionExtraida, contador2)
   
+        this.contador = contador2 ;
         this.autor = null;
         this.nReceta = null;
         this.tiempo = null;
         // this.tipo = null;
         this.ingredientes = null;
         this.preparacion = null;
-        this.contador = contador2 ;
         this.ingredientesExtraidos = [];
         this.preparacionExtraida = [];
         // this.duracionExtraida = [];
