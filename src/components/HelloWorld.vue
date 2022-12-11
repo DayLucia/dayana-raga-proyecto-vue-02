@@ -1,17 +1,17 @@
 <template>
-  <v-container>
+  <v-container class="flex-wrap">
     <v-row class="text-left align-center space-around"> 
       <v-col cols="6">
         <v-row>
           <v-col cols="12">
-            <v-title>
+            <h1>
               {{mainTitle}}
-            </v-title>
+            </h1>
           </v-col>
           <v-col>
-            <v-sub-title>
+            <p>
               {{mainSubT}}
-            </v-sub-title>
+            </p>
           </v-col>
         </v-row>
       </v-col>       
@@ -34,14 +34,14 @@
       <v-col cols="6">
         <v-row>
           <v-col cols="12">
-            <v-title>
+            <h2>
               {{secondTitle}}
-            </v-title>
+            </h2>
           </v-col>
           <v-col cols="12">
-            <v-text>
+            <p>
               {{secondText}}
-            </v-text>
+            </p>
           </v-col>
           <v-btn
             color="red"
@@ -60,9 +60,9 @@
             />
           </v-col>
           <v-col cols="10" >
-            <v-text >
+            <p >
               {{pencilText}}
-            </v-text>
+            </p>
           </v-col>
         </v-row>
       </v-col>       
@@ -74,9 +74,9 @@
             />
           </v-col>
           <v-col cols="10" >
-            <v-text >
+            <p>
             {{shareText}}
-            </v-text>
+            </p>
           </v-col>
         </v-row>
       </v-col>       
@@ -88,9 +88,9 @@
             />
           </v-col>
           <v-col cols="10" >
-            <v-text >
+            <p >
               {{foodText}}
-            </v-text>
+            </p>
           </v-col>
         </v-row>
       </v-col>
@@ -99,21 +99,21 @@
       <v-col cols="6">
         <v-row>
           <v-col cols="12">
-            <v-text>
+            <p>
               {{asideTitle}}
-            </v-text>
+            </p>
           </v-col>
           <v-col cols="12">
-            <v-text>
+            <p>
               {{asideSub}}
-            </v-text>
+            </p>
           </v-col>
           <v-col cols="12">
-            <v-text>
+            <p>
               {{asideText}}
-            </v-text>
+            </p>
           </v-col>
-          <v-col cols="12" class="space-evenly">
+          <v-col cols="12" class="d-flex space-evenly">
             <v-btn
             color="green primary">Play Store</v-btn>
             <v-btn
