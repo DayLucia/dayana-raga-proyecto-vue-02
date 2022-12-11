@@ -1,6 +1,6 @@
 <template>
-  <v-container class="flex-wrap">
-    <v-row class="text-left align-center space-around"> 
+  <v-container class="flex-wrap  align-center">
+    <v-row class="text-left space-around cont1"> 
       <v-col cols="6">
         <v-row>
           <v-col cols="12">
@@ -23,7 +23,7 @@
         />
       </v-col>       
     </v-row>
-    <v-row class="text-left align-center"> <!--Section2-->
+    <v-row class="text-left align-center cont1"> <!--Section2-->
       <v-col cols="6">
         <v-img
         :src="require('../assets/segundoPlato.png')"
@@ -34,24 +34,25 @@
       <v-col cols="6">
         <v-row>
           <v-col cols="12">
-            <h2>
+            <h2 class="fontTitulos tituloSection">
               {{secondTitle}}
             </h2>
           </v-col>
           <v-col cols="12">
-            <p>
+            <p class="fontTexto">
               {{secondText}}
             </p>
           </v-col>
           <v-btn
-            color="red"
+            color="#8C0303"
             raised
-            class="error"
+            class="btn primary"
+            href="#receta"
           >Compartir receta</v-btn>
         </v-row>
       </v-col>       
     </v-row>
-    <v-row class="text-center"> <!--Section iconos-->
+    <v-row class="text-center cont2"> <!--Section iconos-->
       <v-col cols="4">
         <v-row class="text-center justify-center">
           <v-col cols="7">
@@ -94,28 +95,29 @@
           </v-col>
         </v-row>
       </v-col>
-    <v-row class="text-left align-center space-around"
+    <v-row class="text-left cont1 align-center cont3 space-around"
       bg="green"> 
       <v-col cols="6">
         <v-row>
           <v-col cols="12">
-            <p>
+            <h2 class="fontTitulos A">
               {{asideTitle}}
-            </p>
+            </h2>
           </v-col>
           <v-col cols="12">
-            <p>
+            <h3 class="tituloChico">
               {{asideSub}}
-            </p>
+            </h3>
           </v-col>
           <v-col cols="12">
-            <p>
+            <p class="fontTexto">
               {{asideText}}
             </p>
           </v-col>
           <v-col cols="12" class="d-flex space-evenly">
             <v-btn
-            color="green primary">Play Store</v-btn>
+            color="#F2B705"
+            primary>Play Store</v-btn>
             <v-btn
             color="#ffffff"
             normal>Apple store</v-btn>

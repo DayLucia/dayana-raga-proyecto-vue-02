@@ -3,7 +3,7 @@
         <v-row class="text-center">
             <v-col cols="12">
 
-                <h2 class="fontTitulos">¡Publica tu receta!</h2>
+                <h2 class="fontTitulos V" id="receta">¡Publica tu receta!</h2>
             </v-col>
         </v-row>
         <div>
@@ -46,12 +46,14 @@
                     <v-textarea v-model="preparacion" rows="4" label="Preparación" placeholder="Separar los parrafos con un salto de linea"></v-textarea>
                 </v-col>
                 <v-col cols="12" class="text-center">
-                    <v-btn color="green primary" v-on:click.prevent="validateForm">Publicar</v-btn>
+                    <v-btn color="#AFCC0F"
+                    primary
+                     v-on:click.prevent="validateForm">Publicar</v-btn>
                 </v-col>
             </v-row>
         </v-form>
     </div>
-        <v-row class="align-center">
+        <v-row class="align-center cont1">
             <v-col cols="6">
         <v-img
         :src="require('../assets/platoTerciario.png')"
@@ -62,18 +64,20 @@
       <v-col cols="6">
           <v-row>
               <v-col cols="12">
-                  <h2>
+                  <h2 class="fontTitulos tituloSection">
                       {{publicadoTitle}}
                     </h2>
                 </v-col>
                 <v-col cols="12">
-                    <p class="publicadoText">
+                    <p class="publicadoText fontTexto">
                         {{publicadoText}}
                     </p>
                     <v-btn
-                    color="red"
+                    color="#8C0303"
+                    primary
                     raised
                     class="error"
+                    @click="irRecetas"
                     >Mis recetas</v-btn>
                 </v-col>
             </v-row>
@@ -173,7 +177,9 @@ export default {
         // this.duracionExtraida = [];
       }
     },
-    //Metodo de armar los datos del array recetas
+    irRecetas: function(){
+         this.$router.push("/recetas")
+    }, //Metodo de armar los datos del array recetas
     armarReceta: function(nombre, receta, duracion, tipoPlato, ingredientes, preparacion, id) {
       let info = localStorage.getItem('recetas');
       if (info == null) {

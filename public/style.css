@@ -9,6 +9,7 @@ width: 90%;
 .fontTitulos{
 font-family: 'Titan One', cursive;
 font-weight: 400;
+font-size: 2.3em;
 }
 .fontTexto{
 font-family: 'Noto Sans', sans-serif;
@@ -16,11 +17,45 @@ font-size: 1em;
 font-weight: 400;
 }
 .tituloSection{
-font-size: 2.5em;
-color: #8C0303;
-width: 100%;
-margin: auto;
+    font-size: 2.3em;
+    color: #8C0303;
+    width: 100%;
+    margin: auto;
+}
+.tituloChico{
+    font-family: 'Titan One', cursive;
+    font-size: 1.5em;
+  font-weight: bold;
+  color: #3b3b3b;
+  /* margin-top: 1rem; */
+
+}
+.publicadoText{
+    width: 35%;
+    display: inline-block;
+}
+.A{
+    color: #F2B705;
+}
+.V{
+    color: #AFCC0F !important;
 }
 .tituloSection3, .tituloAside2{
 margin-bottom: .7em !important;
+}
+.cont1{
+    align-items: center;
+    min-height: 100vh;
+    text-align: left;
+}
+.cont2 {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom: 3em;
+}
+.cont3{
+    margin-top: 2em;
 }
